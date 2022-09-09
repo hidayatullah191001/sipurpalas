@@ -41,11 +41,8 @@
           <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
           <li class="nav-item"><a href="about.html" class="nav-link">Profile</a></li>
           <li class="nav-item"><a href="course.html" class="nav-link">Koleksi</a></li>
-          <li class="nav-item"><a href="teacher.html" class="nav-link">Teacher</a></li>
-          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-          <li class="nav-item"><a href="event.html" class="nav-link">Events</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-          <li class="nav-item cta"><a href="contact.html" class="nav-link"><span>Apply Now!</span></a></li>
+          <li class="nav-item"><a href="teacher.html" class="nav-link">Referensi</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Video Interaktif</a></li>
         </ul>
       </div>
     </div>

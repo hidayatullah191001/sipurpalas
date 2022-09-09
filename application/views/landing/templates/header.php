@@ -1,60 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
+  <head>
+    <title>Genius - Free Bootstrap 4 Template by Colorlib</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="stylesheet" href="<?=base_url('assets2/')?>css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="<?=base_url('assets2/')?>css/animate.css">
+    
+    <link rel="stylesheet" href="<?=base_url('assets2/')?>css/owl.carousel.min.css">
+    <link rel="stylesheet" href="<?=base_url('assets2/')?>css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="<?=base_url('assets2/')?>css/magnific-popup.css">
 
-	<title>Perpustakaan Digital</title>
+    <link rel="stylesheet" href="<?=base_url('assets2/')?>css/aos.css">
 
-	<!-- Google font -->
-	<link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="<?=base_url('assets2/')?>css/ionicons.min.css">
 
-	<!-- Bootstrap -->
-	<link type="text/css" rel="stylesheet" href="<?=base_url('assets2/')?>css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="<?=base_url('assets2/')?>css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="<?=base_url('assets2/')?>css/jquery.timepicker.css">
 
-	<!-- Font Awesome Icon -->
-	<link rel="stylesheet" href="<?=base_url('assets2/')?>css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="<?=base_url('assets2/')?>css/flaticon.css">
+    <link rel="stylesheet" href="<?=base_url('assets2/')?>css/icomoon.css">
+    <link rel="stylesheet" href="<?=base_url('assets2/')?>css/style.css">
+  </head>
+  <body>
+    
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
 
-	<!-- Custom stlylesheet -->
-	<link type="text/css" rel="stylesheet" href="<?=base_url('assets2/')?>css/style.css"/>
-</head>
-<body>
+      <a class="navbar-brand" href="index.html"><img style="width: 200px;" src="<?=base_url('assets/img/logo3.png') ?>" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
 
-	<!-- Header -->
-	<header id="header" class="transparent-nav">
-		<div class="container">
-
-			<div class="navbar-header">
-				<!-- Logo -->
-				<div class="navbar-brand">
-					<a class="logo" href="<?=base_url('landing') ?>">
-						<img src="<?=base_url('assets/img/logo4.png')?>" alt="logo">
-					</a>
-				</div>
-				<!-- /Logo -->
-
-				<!-- Mobile toggle -->
-				<button class="navbar-toggle">
-					<span></span>
-				</button>
-				<!-- /Mobile toggle -->
-			</div>
-
-			<!-- Navigation -->
-			<nav id="nav">
-				<ul class="main-menu nav navbar-nav navbar-right">
-					<li><a href="<?=base_url('landing')?>">Home</a></li>
-					<li><a href="<?=base_url('landing/profile') ?>">Profile</a></li>
-					<li><a href="<?=base_url('landing/koleksi')?>">Koleksi</a></li>
-					<li><a href="<?=base_url('landing/referensi') ?>">Referensi</a></li>
-					<li><a href="<?=base_url('landing/video_interaktif') ?>">Video Interaktif</a></li>
-				</ul>
-			</nav>
-			<!-- /Navigation -->
-		</div>
-	</header>
-<!-- /Header -->
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">Profile</a></li>
+          <li class="nav-item"><a href="course.html" class="nav-link">Koleksi</a></li>
+          <li class="nav-item"><a href="teacher.html" class="nav-link">Teacher</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="event.html" class="nav-link">Events</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item cta"><a href="contact.html" class="nav-link"><span>Apply Now!</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!-- END nav -->

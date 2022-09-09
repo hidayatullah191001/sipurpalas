@@ -1,70 +1,105 @@
-		<!-- Footer -->
-		<footer id="footer" class="section">
 
-			<!-- container -->
-			<div class="container">
+    <footer class="ftco-footer ftco-bg-dark ftco-section img" style="background-image: url(images/bg_2.jpg); background-attachment:fixed;">
+    	<div class="overlay"></div>
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-3">
+            <div class="ftco-footer-widget mb-4">
+              <h2><a class="navbar-brand" href="index.html"><i class="flaticon-university"></i>Genius <br><small>University</small></a></h2>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Recent Blog</h2>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+                  <div class="meta">
+                    <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
+                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+             <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Site Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">Home</a></li>
+                <li><a href="#" class="py-2 d-block">About</a></li>
+                <li><a href="#" class="py-2 d-block">Courses</a></li>
+                <li><a href="#" class="py-2 d-block">Students</a></li>
+                <li><a href="#" class="py-2 d-block">Video</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
 
-				<!-- row -->
-				<div class="row">
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
 
-					<!-- footer logo -->
-					<div class="col-md-6">
-						<div class="footer-logo">
-							<a class="logo" href="<?=base_url('landing') ?>">
-								<img src="<?=base_url('assets/img/logo3.png') ?>" alt="logo">
-							</a>
-						</div>
-					</div>
-					<!-- footer logo -->
-
-					<!-- footer nav -->
-					<div class="col-md-6">
-						<ul class="footer-nav">
-							<li><a href="<?=base_url('landing')?>">Home</a></li>
-							<li><a href="<?=base_url('landing/profile') ?>">Profile</a></li>
-							<li><a href="<?=base_url('landing/koleksi')?>">Koleksi</a></li>
-							<li><a href="<?=base_url('landing/referensi') ?>">Referensi</a></li>
-							<li><a href="<?=base_url('landing/video_interaktif') ?>">Video Interaktif</a></li>
-						</ul>
-					</div>
-					<!-- /footer nav -->
-				</div>
-				<!-- /row -->
-				<!-- row -->
-				<div id="bottom-footer" class="row">
-
-					<!-- social -->
-					<div class="col-md-4 col-md-push-8">
-						
-					</div>
-					<!-- /social -->
-
-					<!-- copyright -->
-					<div class="col-md-8 col-md-pull-4">
-						<div class="footer-copyright">
-							<span>&copy; Copyright <?=date('Y') ?> <strong>Sistem Informasi Perpustakaan Digital SMA Negeri 14 Palembang</strong></span>
-						</div>
-					</div>
-					<!-- /copyright -->
-
-				</div>
-				<!-- row -->
-
-			</div>
-			<!-- /container -->
-
-		</footer>
-		<!-- /Footer -->
-
-		<!-- preloader -->
-		<div id='preloader'><div class='preloader'></div></div>
-		<!-- /preloader -->
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
-		<!-- jQuery Plugins -->
-		<script type="text/javascript" src="<?=base_url('assets2/')?>js/jquery.min.js"></script>
-		<script type="text/javascript" src="<?=base_url('assets2/')?>js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="<?=base_url('assets2/')?>js/main.js"></script>
-
-	</body>
-	</html>
+  <script src="<?=base_url('assets2/')?>js/jquery.min.js"></script>
+  <script src="<?=base_url('assets2/')?>js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="<?=base_url('assets2/')?>js/popper.min.js"></script>
+  <script src="<?=base_url('assets2/')?>js/bootstrap.min.js"></script>
+  <script src="<?=base_url('assets2/')?>js/jquery.easing.1.3.js"></script>
+  <script src="<?=base_url('assets2/')?>js/jquery.waypoints.min.js"></script>
+  <script src="<?=base_url('assets2/')?>js/jquery.stellar.min.js"></script>
+  <script src="<?=base_url('assets2/')?>js/owl.carousel.min.js"></script>
+  <script src="<?=base_url('assets2/')?>js/jquery.magnific-popup.min.js"></script>
+  <script src="<?=base_url('assets2/')?>js/aos.js"></script>
+  <script src="<?=base_url('assets2/')?>js/jquery.animateNumber.min.js"></script>
+  <script src="<?=base_url('assets2/')?>js/bootstrap-datepicker.js"></script>
+  <script src="<?=base_url('assets2/')?>js/jquery.timepicker.min.js"></script>
+  <script src="<?=base_url('assets2/')?>js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="<?=base_url('assets2/')?>js/google-map.js"></script>
+  <script src="<?=base_url('assets2/')?>js/main.js"></script>
+    
+  </body>
+</html>

@@ -112,4 +112,60 @@ class Operator extends CI_Controller {
 		$this->upload->do_upload($namainputan);
 		return $this->upload->data("file_name");
 	}
+
+	public function quote(){
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+		$data['title'] = 'Quote';
+
+
+		$data['quote'] = $this->db->get('quote')->result_array();
+
+		$this->form_validation->set_rules('by', 'Quote By', 'required');
+		$this->form_validation->set_rules('isi', 'Isi', 'required');
+
+		if ($this->form_validation->run()==false) {
+			$this->load->view('templates/header', $data);
+			$this->load->view('templates/sidebar', $data);
+			$this->load->view('templates/topbar', $data);
+			$this->load->view('operator/quote');
+			$this->load->view('templates/footer');
+		}else{
+			$data = [
+				'quote_by'=>$this->input->post('by'),
+				'isi'=>$this->input->post('isi'),
+			];
+			$this->crud->insert('quote', $data);
+			redirect('operator/quote');
+		}
+	}
+
+	public function edit_quote($id){
+		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+		$data['title'] = 'Edit Quote';
+
+		$data['quote'] = $this->db->get_where('quote', ['id' => $id])->row_array();
+
+		$this->form_validation->set_rules('by', 'Quote By', 'required');
+		$this->form_validation->set_rules('isi', 'Isi', 'required');
+
+		if ($this->form_validation->run()==false) {
+			$this->load->view('templates/header', $data);
+			$this->load->view('templates/sidebar', $data);
+			$this->load->view('templates/topbar', $data);
+			$this->load->view('operator/edit_quote');
+			$this->load->view('templates/footer');
+		}else{
+			$data = [
+				'quote_by'=>$this->input->post('by'),
+				'isi'=>$this->input->post('isi'),
+			];
+			$this->crud->update('quote', $data, 'id', $id);
+			redirect('operator/quote');
+		}
+	}
+
+	public function hapus_quote($id=null){
+		$this->crud->delete('quote', 'id', $id);
+		redirect('operator/quote');
+	}
 }

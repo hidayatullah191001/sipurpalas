@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Genius - Free Bootstrap 4 Template by Colorlib</title>
+    <title>Sistem Perpustakaan Digital | SMA Negeri 14 Palembang</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -38,11 +38,12 @@
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link">Profile</a></li>
-          <li class="nav-item"><a href="course.html" class="nav-link">Koleksi</a></li>
-          <li class="nav-item"><a href="teacher.html" class="nav-link">Referensi</a></li>
-          <li class="nav-item"><a href="blog.html" class="nav-link">Video Interaktif</a></li>
+
+          <li class="nav-item <?=($title == 'Home')? 'active' : '' ?>"><a href="<?=base_url('landing') ?>" class="nav-link">Home</a></li>
+          <li class="nav-item <?=($title == 'Profile')? 'active' : '' ?>"><a href="<?=base_url('landing/profile') ?>" class="nav-link">Profile</a></li>
+          <li class="nav-item <?=($title == 'Koleksi')? 'active' : '' ?>"><a href="<?=base_url('landing/koleksi') ?>" class="nav-link">Koleksi</a></li>
+          <li class="nav-item <?=($title == 'Referensi')? 'active' : '' ?>"><a href="<?=base_url('landing/referensi') ?>" class="nav-link">Referensi</a></li>
+          <li class="nav-item <?=($title == 'Video Interaktif')? 'active' : '' ?>"><a href="<?=base_url('landing/video_interaktif') ?>" class="nav-link">Video Interaktif</a></li>
         </ul>
       </div>
     </div>

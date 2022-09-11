@@ -15,15 +15,7 @@
                         <div class="col">
                            <h6 class="text-pks">Username : <b><?=$user['name'] ?></b></h6>
                            <h6 class="text-pks">Email : <b><?=$user['email'] ?></b></h6>
-                           <h6 class="text-pks">Role : <b><?php 
-                           if ($user['role_id'] == 2) {
-                              echo "Pegawai";
-                           }else if($user['role_id'] == 5){
-                              echo "Lurah";
-                           }else if($user['role_id'] == 1){
-                              echo "Administrator";
-                           }
-                           ?></b></h6>
+                           <h6 class="text-pks">Role : <b>Operator</b></h6>
                            <h6 class="text-pks">Tanggal Gabung : <b>
                               <?php 
                               date_default_timezone_set('Asia/Jakarta');

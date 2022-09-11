@@ -1,44 +1,3 @@
-<script type="text/javascript" src="<?=base_url('assets/') ?>vendor/tinymce/js/tinymce/tinymce.min.js"></script>
-<script type="text/javascript">
-  tinymce.init({
-    selector: "#post_content",
-    height : 250,
-    plugins: [
-    "advlist autolink lists link image media charmap print preview hr anchor pagebreak",
-    "searchreplace wordcount visualblocks visualchars code fullscreen",
-    "insertdatetime nonbreaking save table contextmenu directionality",
-    "emoticons template paste textcolor colorpicker textpattern"
-    ],
-    toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image media responsivefilemanager",
-    automatic_uploads: true,
-    image_advtab: true,
-    images_upload_url: "<?php echo base_url("buku/tinymce_upload")?>",
-    file_picker_types: 'image', 
-    paste_data_images:true,
-    relative_urls: false,
-    remove_script_host: false,
-    file_picker_callback: function(cb, value, meta) {
-     var input = document.createElement('input');
-     input.setAttribute('type', 'file');
-     input.setAttribute('accept', 'image/*');
-     input.onchange = function() {
-      var file = this.files[0];
-      var reader = new FileReader();
-      reader.readAsDataURL(file);
-      reader.onload = function () {
-       var id = 'post-image-' + (new Date()).getTime();
-       var blobCache =  tinymce.activeEditor.editorUpload.blobCache;
-       var blobInfo = blobCache.create(id, file, reader.result);
-       blobCache.add(blobInfo);
-       cb(blobInfo.blobUri(), { title: file.name });
-     };
-   };
-   input.click();
- }
-});
-</script>
-
-
 <!-- Begin Page Content -->
 <div class="container-fluid">
 
@@ -94,7 +53,7 @@
           <?php if ($buku['thumbnail'] == ''): ?>
             <img style="width: 150px; height:100px; object-fit: cover" src="https://asset.kompas.com/crops/mTnVdoYXCoN9ElxrsEDbdoY7y0s=/65x65:865x599/750x500/data/photo/2017/06/28/1265845835.jpg">
           <?php else : ?>
-           <img style="width: 100px; height:100px; object-fit: cover" src="<?=base_url('assets/data/thumbnail/').$buku['thumbnail'] ?>">
+           <img style="width: 100px; height:100px; object-fit: cover" src="<?=base_url('assets/data/upload/').$buku['thumbnail'] ?>">
           <?php endif ?>
           <input type="text" name="oldthumbnail" hidden="" value="<?=$buku['thumbnail']?>">
         </div>

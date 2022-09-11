@@ -1,48 +1,32 @@
-<!-- Hero-area -->
-<div class="hero-area section">
-
-	<!-- Backgound Image -->
-	<div class="bg-image bg-parallax overlay" style="background-image:url(<?=base_url('assets2/') ?>/img/hero.jpg)"></div>
-	<!-- /Backgound Image -->
-
+<div class="hero-wrap hero-wrap-2" style="background-image: url('<?= base_url('assets/') ?>img/hero.jpg'); background-attachment:fixed;">
+	<div class="overlay"></div>
 	<div class="container">
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1 text-center">
-				<h1 class="white-text">Profile</h1>
+		<div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+			<div class="col-md-8 ftco-animate text-center">
+				<p class="breadcrumbs"><span class="mr-2"><a href="<?=base_url('landing') ?>">Home</a></span> <span>Profile</span></p>
+				<h1 class="mb-3 bread">Profile Sekolah</h1>
 			</div>
 		</div>
 	</div>
-
 </div>
-<!-- /Hero-area -->
-
-<!-- About -->
-<div id="about" class="section">
-
-	<!-- container -->
+<section class="ftco-section">
 	<div class="container">
-
 		<?php foreach ($profile as $pr): ?>
-			<!-- row -->
-			<div class="row">
-				<div class="col-md-8">
-					<?=$pr['isi'] ?>
-				</div>
-				<div class="col-md-4">
-					<div class="about-img">
-						<img src="<?=base_url('assets/data/kepsek/').$pr['foto'] ?>" alt="">
-						<center>
-							<h3><?=$pr['nama'] ?></h3>
-							<h5><strong>Kepala Sekolah</strong></h5>
-							<br>
-							<p><?=$pr['sambutan'] ?></p>
-						</center>
+			<div class="row d-flex">
+				<div class="col-md-3 d-flex ftco-animate">
+					<div class="img img-about align-self-stretch text-center">
+						<img style="width: 100%" src="<?=base_url('assets/data/kepsek/').$pr['foto'] ?>"><br><br>
+						<h6><strong><?=$pr['nama'] ?></strong></h6>
+						<p>Kepala Sekolah</p>
 					</div>
 				</div>
+				<div class="col-md-9 pl-md-5 ftco-animate">
+					<h2 class="mb-4">Selamat Datang di Sistem Perpustakaan Digital SMA Negeri 14 Palembang</h2>
+					<p><?=$pr['sambutan'] ?></p>
+				</div>
 			</div>
-			<!-- row -->
+			<br><br>
+			<?=$pr['isi'] ?>
 		<?php endforeach ?>
 	</div>
-	<!-- container -->
-</div>
-<!-- /About -->
+</section>
